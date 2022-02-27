@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<title>GSM оформление заказов</title>
+</head>
+<body>
+	<a href="index.html" class="home"><ion-icon class="arrow-back-outline" name="arrow-back-outline"></ion-icon>Главная</a>
+	<div class="title">
+		<h1 class="title__p">GSM оформление заказов</h1>
+	</div>
+	<div class="wrapper">
+		<div class="bg__image">
+		
+		</div>
+		<div class="form">
+			<form action="order.php" id="form" class="form__body">
+				
+				<div class="form__item">
+					<label for="formName" class="form__label">Имя (обязательно):</label>
+					<input type="text" id="formName" name="name" class="form__input _req">
+				</div>
+				<div class="form__item">
+					<label for="formEmail" class="form__label">E-mail (обязательно):</label>
+					<input type="text" id="formEmail" name="email" class="form__input _req _email">
+				</div>
+				<div class="form__item">
+					<label for="formMessage" class="form__label">Сообщение (можете обсудить лично):</label>
+					<textarea id="formMessage" name="message" class="form__input"></textarea>
+				</div>
+				<div class="select__item">
+					<div class="form__item selector">
+						<div class="form__label">Услуги (обязательно)</div>
+						<select name="age" class="select _req">
+							<option>Видео-редактор</option>
+							<option>Веб-дизайнер</option>
+							<option>Дизайнер соц-сетей</option>
+							<option>Маркетолог</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Цена работы (обязательно)</div>
+						<select name="age" class="select ">
+							<option>от 100 до 1000 раблей</option>
+							<option>от 1000 до 10000 рублей</option>
+							<option>от 10000 до 20000 рублей</option>
+							<option>более 20000 рублей</option>
+						</select>
+					</div>
+				</div>
+				<!--
+				<div class="form__item">
+					<div class="form__label">Прикрепите фото проекта (если есть)</div>
+					<div class="file">
+						<div class="file__item">
+							<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+							<div class="file__button">Выбрать</div>
+						</div>
+						<div id="formPreview" class="file__preview"></div>
+					</div>
+				</div>-->
+				<div class="form__item">
+					<div class="checkbox">
+						<input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+						<label for="formAgreement" class="checkbox__label">
+							<span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>*</div></span>
+						</label>
+					</div>
+					<button class="form__button" type="submit">Отправить</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="order.js"></script>
+</body>
+</html>
